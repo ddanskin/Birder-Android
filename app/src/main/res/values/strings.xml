@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Birder</string>
+    <string name="login_title">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="submit_button">Submit</string>
+    <string name="email_hint">janedoe@email.com</string>
+    <string name="password_hint">Test123!</string>
 </resources>
