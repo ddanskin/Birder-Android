@@ -1,12 +1,18 @@
 package com.danielledanskin.birder;
 
 public class LoginUtils {
+
+    /**
+     * Tag for the log messages
+     */
+    private static final String LOG_TAG = LoginUtils.class.getName();
+
     /**
      * This method checks if the email address is valid
      * @param email
      * @return
      */
-    public boolean isValidEmailAddress(String email){
+    public static boolean isValidEmailAddress(String email){
         boolean hasAtSign = email.indexOf("@") > -1;
         return hasAtSign;
     }
@@ -17,7 +23,7 @@ public class LoginUtils {
      * @param email
      * @return
      */
-    public int getLocalPartLength(String email) {
+    public static int getLocalPartLength(String email) {
         int start = email.indexOf("@");
         String localPart = email.substring(0, start);
         return localPart.length();
@@ -28,13 +34,10 @@ public class LoginUtils {
      * @param password
      * @return
      */
-    public boolean isValidPassword(String password){
+    public static boolean isValidPassword(String password){
         if (password.length() < 8) {
             return false;
         }
-
-
-
 
         return true;
     }
